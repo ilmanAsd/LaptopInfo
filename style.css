@@ -1,0 +1,205 @@
+@import url(@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+}
+
+h2 {
+	color: #270082;
+}
+
+h3 {
+	color: #3a00c6;
+}
+
+
+header {
+	display: inline;
+}
+
+
+footer {
+	padding: 20px;
+	color: white;
+	background: radial-gradient(circle at top left, #270082 40%, #a30689);
+	text-align: center;
+   font-weight: bold;
+}
+
+nav {
+	padding: 5px;
+	position: sticky;
+	top: 0;
+	background: radial-gradient(circle at top left, #270082 40%, #a30689);
+}
+
+nav a {
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: white;
+}
+nav a:hover {
+   font-weight: bold;
+}
+nav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+
+ #penjelasan {
+ 	padding: 0 30px 0 30px;
+ 	line-height: 1.5;
+ 	text-indent: 5%;
+ }
+
+ .deskriptif {
+ 	text-align: justify;
+ 	line-height: 1.5;
+ 	text-indent: 5%;
+ }
+.profile header {
+	text-align: center;
+}
+
+.featured-image {
+	width: 100%;
+	max-height: 400px;
+	object-fit: cover;
+	object-position: center;
+	border: 2px solid transparent;
+	border-image: linear-gradient(to bottom, #7a2b6d, #1A1A40 , #7A0BC0 );
+    border-image-slice: 1;
+
+}
+
+article.profile {
+	border-top: 2px;
+	border-color: black;
+}
+
+.profile img {
+	width: 200px;
+	height: 255px;
+	border-radius: 60%;
+}
+
+article.card {
+   
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.latarbelakang {
+	font-size: 20px;
+	padding: 60px;
+	background: radial-gradient(circle at top left, #7a2b6d, #1A1A40 , #7A0BC0 );
+	text-align: center;
+	color: white;
+}
+
+#content {
+	/*float: left;*/
+	width: 100%;
+}
+
+.laptop {
+	width: 100%;
+}
+
+.laptop-2, .laptop-3 {
+	overflow: auto;
+	width: 100%;
+}
+
+
+#DELL, #Lenovo, #perform-1{
+	float: left;
+	width: 50%;
+}
+#apple, #huaweii, #perform-2 {
+	float: right;
+	width: 50%;
+}
+
+
+aside {
+	width: 100%;
+	padding-left: 20px;
+	overflow: auto;
+}
+
+.datadiri {
+	text-align: center;
+	margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+	#content, aside {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+
+.dropbutton {
+	background-color: #270082;
+	color: white;
+	padding:0 0 0 0;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropbutton:hover, .dropbutton:focus {
+	font-weight: bold;
+}
+
+.dropdown {
+	
+  	position: relative;
+  	display: inline-block;
+  	padding: 0;
+}
+
+.drop-item {
+	background: linear-gradient( to top, #a30689, #270082 40%);
+	display: none;
+ 	position: absolute;
+  	border-radius: 5px;
+  	overflow: auto;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	right: 0;
+  	z-index: 1;
+}
+
+.drop-item a {
+	color: white;
+	padding: 12px 16px;
+	overflow: auto;
+  	text-decoration: none;
+  	display: block;
+  	opacity: 100%;
+}
+
+.dropdown a:hover {
+	background-color: white;
+	color: black;
+}
+.show {
+	display: block;
+}
